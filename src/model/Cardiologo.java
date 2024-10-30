@@ -1,4 +1,40 @@
 package model;
 
-public class Cardiologo {
+import constantes.Especialidades;
+import interfaz.IHemograma;
+
+import java.util.HashSet;
+
+public class Cardiologo extends Doctor implements IHemograma {
+    private int numeroDePacientes;
+
+    public Cardiologo(String nombre, int legajo, int numeroDePacientes) {
+        super(nombre, legajo, Especialidades.CARDIOLOGO);
+        this.numeroDePacientes = numeroDePacientes;
+
+
+    }
+
+    @Override
+    public void análisisDeSangre() {
+        System.out.println("Se esta realizando un analisis de sangre, el mismo fue solicitado por el doctor: " + nombre);
+    }
+
+    public void realizarDiagnostico() {
+        diagnosticarPaciente();
+    }
+
+    public void iniciarTratamiento() {
+        tratamientoPaciente();
+    }
+
+    @Override
+    public String toString() {
+        return "Cardiologo{" +
+                "nombre='" + nombre + '\'' +
+                ", legajo=" + legajo +
+                ", especialidad=" + especialidad +
+                ", numeroDePacientes=" + numeroDePacientes +
+                '}';
+    }
 }

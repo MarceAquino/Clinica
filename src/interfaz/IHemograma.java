@@ -1,5 +1,5 @@
 package interfaz;
 
-public interface I {
+public interface IHemograma {
     public void análisisDeSangre();
 }
