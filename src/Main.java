@@ -53,6 +53,7 @@ public class Main {
             System.out.println(pediatra);
             pediatra.evaluarCrecimiento();
             System.out.println("********************************");
+            System.out.println(Doctor.obtenerLegajos());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }

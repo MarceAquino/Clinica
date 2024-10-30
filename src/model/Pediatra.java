@@ -31,8 +31,6 @@ public class Pediatra extends Doctor implements IHemograma, IAtencionInfantil {
         return "Pediatra{" +
                 "nombre='" + nombre + '\'' +
                 ", legajo=" + legajo +
-                ", especialidad=" + especialidad +
-                ", especialidad='" + especialidad + '\'' +
-                '}';
+                ", especialidad=" + especialidad;
     }
 }

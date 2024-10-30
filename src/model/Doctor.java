@@ -27,7 +27,6 @@ public abstract class Doctor {
         return legajo;
     }
 
-
     private String validarNombre(String nombre) {
         if (nombre == null || nombre.trim().isEmpty() || !nombre.matches("[a-zA-Z\\s]+")) {
             throw new IllegalArgumentException("El nombre solo puede contener letras.");
@@ -36,12 +35,15 @@ public abstract class Doctor {
     }
 
 
-    protected void diagnosticarPaciente() {
+    public void diagnosticarPaciente() {
         System.out.println("El paciente esta siendo diagnosticado por: " + nombre +"\n"+"Su especialidad es: " + especialidad);
     }
 
     protected void tratamientoPaciente() {
         System.out.println("El Doctor " + nombre +" recomendo reposo como parte del tratamiento." +"\n"+"Su especialidad es: " + especialidad);
+    }
+    public static Set<Integer> obtenerLegajos() {
+        return new HashSet<>(legajos);
     }
 
     @Override
@@ -52,4 +54,5 @@ public abstract class Doctor {
                 ", especialidad=" + especialidad +
                 '}';
     }
+
 }
