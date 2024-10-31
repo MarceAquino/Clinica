@@ -3,14 +3,12 @@ package model;
 import constantes.Especialidades;
 import interfaz.IHemograma;
 
-import java.util.HashSet;
-
 public class Cardiologo extends Doctor implements IHemograma {
-    private int numeroDePacientes;
+    private int numeroDePaciente;
 
-    public Cardiologo(String nombre, int legajo, int numeroDePacientes) {
+    public Cardiologo(String nombre, int legajo, int numeroDePaciente) {
         super(nombre, legajo, Especialidades.CARDIOLOGO);
-        this.numeroDePacientes = numeroDePacientes;
+        this.numeroDePaciente = numeroDePaciente;
     }
 
     @Override
@@ -43,7 +41,7 @@ public class Cardiologo extends Doctor implements IHemograma {
                 "nombre='" + nombre + '\'' +
                 ", legajo=" + legajo +
                 ", especialidad=" + especialidad +
-                ", numeroDePacientes=" + numeroDePacientes +
+                ", numeroDePaciente=" + numeroDePaciente +
                 '}';
     }
 }

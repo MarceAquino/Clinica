@@ -1,0 +1,51 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>360</x><y>192</y><w>184</w><h>96</h></coordinates><panel_attributes>style=autoresize
+/Doctor/
+--
+# nombre : String
+# legajo : int
+--
+- validarLegado (int legajo) : int
+- validarString (String nombre) : String
++ toString() : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>432</y><w>112</w><h>64</h></coordinates><panel_attributes>style=autoresize
+Cardiologo
+--
+- numeroPaciente : int
+--
++ toString : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>544</x><y>424</y><w>88</w><h>48</h></coordinates><panel_attributes>style=autoresize
+Traumatologo
+--
++ toString : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>432</y><w>88</w><h>48</h></coordinates><panel_attributes>style=autoresize
+Pediatra
+--
++ toString : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>688</x><y>424</y><w>112</w><h>72</h></coordinates><panel_attributes>style=autoresize
+Oftalmologo
+--
+- numeroTelefono : int
+--
++ fondoDeOjos () : void
++ toString : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>648</y><w>136</w><h>56</h></coordinates><panel_attributes>style=autoresize
+&lt;&lt;interface&gt;&gt;
+IHemograma
+--
++ analisisDeSangre () : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>208</y><w>152</w><h>72</h></coordinates><panel_attributes>style=autoresize
+&lt;&lt;interface&gt;&gt;
+IMedico
+--
++ diagnosticarPaciente () : void
++ tratamientoPaciente () : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>520</y><w>120</w><h>56</h></coordinates><panel_attributes>style=autoresize
+&lt;&lt;interface&gt;&gt;
+IRayos
+--
++ realizarPlacas  () : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>520</y><w>144</w><h>56</h></coordinates><panel_attributes>style=autoresize
+&lt;&lt;interface&gt;&gt;
+IAtencionIngantil
+--
++ evaluarCrecimiento () : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>192</y><w>96</w><h>80</h></coordinates><panel_attributes>style=autoresize
+&lt;&lt;Enum&gt;&gt;
+--
+__+CARDIOLOGO__
+__+TRAUMATOLOGO__
+__+OFTALMOLOGO__
+__+PEDIATRA__</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>224</y><w>112</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+#especialidad</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>280</y><w>208</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;10;240;80;10;80;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>232</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>280</y><w>24</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>280</y><w>160</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;180;80;180;170</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>280</y><w>160</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;180;80;180;180</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>280</y><w>320</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;380;80;380;180</additional_attributes></element><element><id>Relation</id><coordinates><x>584</x><y>464</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>472</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>488</y><w>24</w><h>176</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>432</y><w>424</w><h>232</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;270;10;220;510;220;510;10;470;10</additional_attributes></element><element><id>Relation</id><coordinates><x>256</x><y>440</y><w>160</w><h>224</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;260;10;210;110;210;110;10;180;10</additional_attributes></element></diagram>

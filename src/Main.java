@@ -13,8 +13,8 @@ public class Main {
             Cardiologo cardiologo = new Cardiologo("Marcos", 150, 10);
             System.out.println(cardiologo);
             cardiologo.análisisDeSangre();
-            cardiologo.realizarDiagnostico();
-            cardiologo.iniciarTratamiento();
+            cardiologo.diagnosticarPaciente();
+            cardiologo.tratamientoPaciente();
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
@@ -41,8 +41,8 @@ public class Main {
             Traumatologo traumatologo = new Traumatologo("Ruben", 151, 10);
             System.out.println(traumatologo);
             traumatologo.realizarPlacas();
-            traumatologo.iniciarTratamiento();
-            traumatologo.realizarDiagnostico();
+            traumatologo.diagnosticarPaciente();
+            traumatologo.tratamientoPaciente();
             traumatologo.análisisDeSangre();
             System.out.println("********************************");
             Oftalmologo oftalmologo = new Oftalmologo("Carla", 200, 1100502038);
