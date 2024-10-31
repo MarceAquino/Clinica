@@ -1,11 +1,12 @@
 package model;
 
 import constantes.Especialidades;
+import interfaz.IMedico;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public abstract class Doctor {
+public abstract class Doctor implements IMedico {
 
     protected String nombre;
     protected int legajo;
@@ -17,7 +18,6 @@ public abstract class Doctor {
         this.legajo = validarLegajo(legajo);
         this.especialidad = especialidad;
     }
-
 
 
     private int validarLegajo(int legajo) {
@@ -33,15 +33,16 @@ public abstract class Doctor {
         }
         return nombre;
     }
-
-
-    public void diagnosticarPaciente() {
+    //Consultar
+    /*
+    protected void diagnosticarPaciente() {
         System.out.println("El paciente esta siendo diagnosticado por: " + nombre +"\n"+"Su especialidad es: " + especialidad);
     }
 
     protected void tratamientoPaciente() {
         System.out.println("El Doctor " + nombre +" recomendo reposo como parte del tratamiento." +"\n"+"Su especialidad es: " + especialidad);
-    }
+    }*/
+
     public static Set<Integer> obtenerLegajos() {
         return new HashSet<>(legajos);
     }

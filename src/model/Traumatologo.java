@@ -19,14 +19,25 @@ public class Traumatologo extends Doctor implements IHemograma, IRayosX {
 
     @Override
     public void realizarPlacas() {
-
+        System.out.println("El traumatogo esta realizando placas");
     }
+
+    /*
     public void realizarDiagnostico() {
         diagnosticarPaciente();
     }
 
     public void iniciarTratamiento() {
         tratamientoPaciente();
+    }*/
+    @Override
+    public void diagnosticarPaciente() {
+        System.out.println("El paciente esta siendo diagnosticado por: " + nombre + "\n" + "Su especialidad es: " + especialidad);
+    }
+
+    @Override
+    public void tratamientoPaciente() {
+        System.out.println("El Doctor " + nombre + " recomendo pastillas para el dolor muscular." + "\n" + "Su especialidad es: " + especialidad);
     }
 
     @Override
