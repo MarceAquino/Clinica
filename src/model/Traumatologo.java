@@ -1,6 +1,6 @@
 package model;
 
-import constantes.Especialidades;
+import constantes.Especialidad;
 import interfaz.IHemograma;
 import interfaz.IRayosX;
 
@@ -8,7 +8,7 @@ public class Traumatologo extends Doctor implements IHemograma, IRayosX {
     private int numeroDeCirugiasRealizadas;
 
     public Traumatologo(String nombre, int legajo, int numeroDeCirugiasRealizadas) {
-        super(nombre, legajo, Especialidades.TRAUMATOLOGO);
+        super(nombre, legajo, Especialidad.TRAUMATOLOGO);
         this.numeroDeCirugiasRealizadas = numeroDeCirugiasRealizadas;
     }
 

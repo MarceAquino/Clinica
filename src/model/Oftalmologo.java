@@ -1,12 +1,12 @@
 package model;
 
-import constantes.Especialidades;
+import constantes.Especialidad;
 
 public class Oftalmologo extends Doctor {
     private int numeroTelefono;
 
     public Oftalmologo(String nombre, int legajo, int numeroTelefono) {
-        super(nombre, legajo, Especialidades.OFTALMOLOGO);
+        super(nombre, legajo, Especialidad.OFTALMOLOGO);
         this.numeroTelefono = numeroTelefono;
     }
 

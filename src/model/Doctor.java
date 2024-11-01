@@ -1,6 +1,6 @@
 package model;
 
-import constantes.Especialidades;
+import constantes.Especialidad;
 import interfaz.IMedico;
 
 import java.util.HashSet;
@@ -10,10 +10,10 @@ public abstract class Doctor implements IMedico {
 
     protected String nombre;
     protected int legajo;
-    protected Especialidades especialidad;
+    protected Especialidad especialidad;
     private static final Set<Integer> legajos = new HashSet<>();
 
-    public Doctor(String nombre, int legajo, Especialidades especialidad) {
+    public Doctor(String nombre, int legajo, Especialidad especialidad) {
         this.nombre = validarNombre(nombre);
         this.legajo = validarLegajo(legajo);
         this.especialidad = especialidad;

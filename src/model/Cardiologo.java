@@ -1,13 +1,13 @@
 package model;
 
-import constantes.Especialidades;
+import constantes.Especialidad;
 import interfaz.IHemograma;
 
 public class Cardiologo extends Doctor implements IHemograma {
     private int numeroDePaciente;
 
     public Cardiologo(String nombre, int legajo, int numeroDePaciente) {
-        super(nombre, legajo, Especialidades.CARDIOLOGO);
+        super(nombre, legajo, Especialidad.CARDIOLOGO);
         this.numeroDePaciente = numeroDePaciente;
     }
 

@@ -1,13 +1,13 @@
 package model;
 
-import constantes.Especialidades;
+import constantes.Especialidad;
 import interfaz.IAtencionInfantil;
 import interfaz.IHemograma;
 
 public class Pediatra extends Doctor implements IHemograma, IAtencionInfantil {
 
     public Pediatra(String nombre, int legajo) {
-        super(nombre, legajo, Especialidades.PEDIATRA);
+        super(nombre, legajo, Especialidad.PEDIATRA);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package constantes;
 
-public enum Especialidades {
+public enum Especialidad {
     CARDIOLOGO,
     TRAUMATOLOGO,
     OFTALMOLOGO,
